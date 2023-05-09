@@ -3,6 +3,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+
 public class MatchSearchController {
 
     @FXML
@@ -37,6 +39,12 @@ public class MatchSearchController {
 
     @FXML
     private Button emailMe;
+
+    @FXML
+    private Label inflationRateLabel;
+
+    @FXML
+    private Text inflationRateText;
 
     public TextField getSearchField() {
         return searchField;
@@ -78,4 +86,12 @@ public class MatchSearchController {
     public Button getEmailMe() {
         return emailMe;
     }
+
+    public Label getInflationValueLabel() {
+        return inflationRateLabel;
+    }
+    public Text getInflationRateText() {
+        return inflationRateText;
+    }
+
 }

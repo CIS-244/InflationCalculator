@@ -17,20 +17,21 @@ public class createAccountController extends AnchorPane {
 
         @FXML
         private Button createButton;
+        @FXML
+        private Button cancelButton;
+
 
         public TextField getUsernameField() {
                 return usernameField;
         }
-
         public PasswordField getPasswordField() {
                 return passwordField;
         }
-
         public PasswordField getConfirmPasswordField() {
                 return confirmPasswordField;
         }
-
         public Button getCreateButton() {
                 return createButton;
         }
+        public Button getCancelButton() {return cancelButton;}
 }

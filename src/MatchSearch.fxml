@@ -13,40 +13,43 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@Logo_CIS244.png" />
-      </image></ImageView>
-    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Inflation Calculator" />
-      <Button fx:id="emailMe" text="Email Me" />
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Logo_CIS244.png" />
+        </image>
+    </ImageView>
+    <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-font-family: Helvetica, 'Helvetica', sans-serif;" text="Inflation Calculator" />
+    <Button fx:id="emailMe" text="Email Me" />
     <GridPane alignment="CENTER" hgap="10" vgap="10">
         <Label fx:id="enterSearchTermLabel" text="Enter a search term:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
         <TextField fx:id="searchField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
         <Button fx:id="searchButton" text="Search" GridPane.columnIndex="2" GridPane.rowIndex="0" />
         <columnConstraints>
-         <ColumnConstraints />
-         <ColumnConstraints />
-         <ColumnConstraints />
-      </columnConstraints>
-      <rowConstraints>
-         <RowConstraints />
-      </rowConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+        </rowConstraints>
     </GridPane>
     <HBox alignment="CENTER" spacing="10">
-        <Label text="Price:" />
-        <Label fx:id="priceValueLabel" />
+        <Label text="Price: $" styleClass="total-value-label"/>
+        <Label fx:id="priceValueLabel" styleClass="total-value-label"/>
+        <Label text="Annualized Inflation: " GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="total-value-label"/>
+        <Label fx:id="inflationRateLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="total-value-label"/>
     </HBox>
-    <ListView fx:id="resultsList" prefHeight="200.0" />
+    <ListView fx:id="resultsList" prefHeight="200.0" maxWidth="700.0" />
     <Button fx:id="addButton" disable="true" text="Add to List" />
     <VBox alignment="CENTER" spacing="10">
-        <ListView fx:id="selectedList" prefHeight="200.0" />
+        <ListView fx:id="selectedList" prefHeight="200.0" maxWidth="700.0" />
         <HBox alignment="CENTER" spacing="10">
-             <Label text="Total before Inflation:$" />
-            <Label fx:id="totalValueLabel1" text="0.00" />
-            <Label text="Total After Inflation:$" />
-            <Label fx:id="totalValueLabel2" text="0.00" />
-             <Label text="You save:" />
-            <Label fx:id="totalValueLabel3" text="0.00" />
+            <Label text="Total before Inflation: $" styleClass="total-value-label"/>
+            <Label fx:id="totalValueLabel1" text="0.00" styleClass="total-value-label"/>
+            <Label text="Total After Inflation: $" styleClass="total-value-label"/>
+            <Label fx:id="totalValueLabel2" text="0.00" styleClass="total-value-label"/>
+            <Label text="Difference: $" styleClass="total-value-label"/>
+            <Label fx:id="totalValueLabel3" text="0.00" styleClass="total-value-label"/>
             <Button fx:id="removeButton" text="Remove" />
         </HBox>
     </VBox>

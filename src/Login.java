@@ -3,8 +3,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.InputStream;
 import java.sql.*;
 
 public class Login extends Application {
@@ -16,7 +18,6 @@ public class Login extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         // Load the FXML file for the login screen and create a new instance of the LoginController
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         LoginController controller = new LoginController();
@@ -25,12 +26,18 @@ public class Login extends Application {
         loader.setController(controller);
         Parent root = loader.load();
         
-        //Add css stylesheet
-        root.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
-
+        // Add the stylesheet to the list of stylesheets for the entire application
+        String stylesheet = getClass().getResource("stylesheet.css").toExternalForm();
+        Application.setUserAgentStylesheet(stylesheet);
         // Set the title and size of the login screen and show it
         primaryStage.setTitle("Inflation Calculator");
         primaryStage.setScene(new Scene(root, 450, 450));
+        // Set the application icon
+        try (InputStream iconStream = getClass().getResourceAsStream("/Logo_CIS244.png")) {
+            if (iconStream != null) {
+                primaryStage.getIcons().add(new Image(iconStream));
+            }
+        }
         primaryStage.show();
 
         // Handle the login button click event
@@ -73,7 +80,7 @@ public class Login extends Application {
             } catch (Exception e) {
                 System.out.println("Cannot launch account creation" + e.getMessage());
             }
-             primaryStage.hide();
+             primaryStage.close();
             });
 
         }

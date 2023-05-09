@@ -1,32 +1,135 @@
 .root{
-	-fx-background-color: rgb(52, 149, 235);
+	-fx-background-color: #f5ecd5;
 }
-
 
 #label1{
 	-fx-font-size: 400%;
-	-fx-font-family: Impact, Helvetica, 'Times New Roman', serif;
+	-fx-font-family: Helvetica, 'Helvetica', sans-serif;
 	-fx-font-weight: 800;
 	
 }
+/* Change the font and color of the username label */
 
 #usernameLabel{
 	-fx-font-size: 200%;
-	-fx-font-family: Impact, Helvetica, 'Times New Roman', serif;
+	-fx-font-family: Helvetica, 'Helvetica', sans-serif;
 	-fx-font-weight: 400;
 	
 }
+/* Change the font and color of the password label */
 
 #passwordLabel{
 	-fx-font-size: 200%;
-	-fx-font-family: Impact, Helvetica, 'Times New Roman', serif;
+	-fx-font-family: Helvetica, 'Helvetica', sans-serif;
 	-fx-font-weight: 400;
 	
 }
-
+/* Change the search Label */
 #enterSearchTermLabel{
-	-fx-font-size: 200%;
-	-fx-font-family: Helvetica, 'Times New Roman', serif;
+	-fx-font-size: 125%;
+	-fx-font-family: Helvetica, 'Helvetica', sans-serif;
 	-fx-font-weight: 400;
-	
+}
+/* Change the font and color of the login button */
+#loginButton {
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff;
+    -fx-background-color: #4CAF50;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+}
+
+
+/* Change the font and color of the username and password fields */
+.text-field, .password-field {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+}
+/*change size of create new account text*/
+#CreateNewAccount {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 24px;
+}
+
+
+/* Set the background color of the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f7f7f7;
+}
+
+/* Style the Label */
+.label {
+    -fx-font-family: "Helvetica Neue", Helvetica, sans-serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+}
+
+/* Style the TextField */
+.text-field {
+    -fx-font-family: "Helvetica Neue", Helvetica, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+}
+/* Style the HBox */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: CENTER_RIGHT;
+}
+/* Style the dollar labels */
+
+.total-value-label {
+  -fx-font-family: "Helvetica Neue";
+  -fx-font-size: 10pt;
+}
+/* Style the Buttons */
+.button {
+    -fx-font-family: "Helvetica Neue", Helvetica, sans-serif;
+    -fx-font-size: 12px;
+    -fx-background-color: #8c8c8c;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-padding: 10px 20px;
+}
+
+/* Center the content of the lists horizontally and vertically */
+.list-cell {
+    -fx-background-color: white;
+    -fx-alignment: center-right;
+}
+/* highlight selected text */
+.list-cell:selected .text {
+    -fx-fill: red;
+    -fx-background-color: grey;
+}
+/* Styling for selecting from the results list */
+.list-view {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+/* Styling for selecting from the results list */
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #dbd9d9;
+}
+
+.alert {
+    -fx-border-color: #F5C6CB; /* border color */
+    -fx-border-width: 1px; /* border width */
+    -fx-padding: 10px; /* padding */
+}
+
+.alert .header {
+    -fx-font-weight: bold; /* header font weight */
+    -fx-text-fill: #721C24; /* header text color */
+}
+
+.alert .content {
+    -fx-text-fill: #721C24; /* content text color */
 }

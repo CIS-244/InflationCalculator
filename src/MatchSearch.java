@@ -47,8 +47,7 @@ public class MatchSearch extends Application {
         loader.setController(controller);
         Parent root = loader.load();
 
-        //Add css stylesheet
-        root.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
+        controller.getInflationValueLabel().setText(String.format("%.2f%%", (inflationRate - 1) * 100));
 
         Scene scene = new Scene(root, 800, 600);
         stage.setScene(scene);
@@ -61,6 +60,7 @@ public class MatchSearch extends Application {
                 DB_PASSWORD);
 
         // Set up event listeners for the GUI buttons
+
         controller.getSearchButton().setOnAction(event -> {
             String searchTerm = controller.getSearchField().getText();
             ArrayList<String> results = searchDatabase(searchTerm);
@@ -130,8 +130,9 @@ public class MatchSearch extends Application {
             while (rs.next()) {
                 // Add each matching product to the results list
                 String name = rs.getString("PRODUCT_NAME");
-                String price = rs.getString("PRICE_RETAIL");
-                String product = name + " ($" + price + ")";
+                double price = rs.getDouble("PRICE_RETAIL");
+                String formattedPrice = String.format("%.2f", price);
+                String product = name + " ($" + formattedPrice + ")";
                 if (!results.contains(product)) {
                     results.add(product);
                 }
@@ -166,6 +167,9 @@ public class MatchSearch extends Application {
         EmailSceneController controller = new EmailSceneController();
         loader.setController(controller);
         Parent root = loader.load();
+
+        //Add css stylesheet
+        root.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
 
         controller.setStage(new Stage());
 

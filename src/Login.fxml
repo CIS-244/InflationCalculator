@@ -21,7 +21,7 @@
     <GridPane alignment="CENTER" hgap="10" prefHeight="143.0" prefWidth="308.0" vgap="10">
         <Label fx:id="usernameLabel" text="Username:" />
         <TextField fx:id="usernameField" GridPane.columnIndex="1" />
-        <Label fx:id="passwordLabel" text="Password:" GridPane.rowIndex="1" />
+        <Label fx:id="passwordLabel" text=" Password:" GridPane.rowIndex="1" />
         <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Button fx:id="createAccountButton" text="Create new account" GridPane.columnIndex="1" GridPane.rowIndex="5" />
         <Button fx:id="loginButton" text="Log in" GridPane.columnIndex="1" GridPane.rowIndex="3" />

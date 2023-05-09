@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64eb6eb-4b0f-4a38-8730-3940660486f1" name="Changes" comment="Added email scene">
-      <change afterPath="$PROJECT_DIR$/src/EmailScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EmailSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logo_CIS244.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmailSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmailSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MatchSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearch.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MatchSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MatchSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/createAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/createAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/createAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/createAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683591051078</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added email scene">
+      <created>1683607410250</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683607410250</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -27,7 +27,15 @@ public class createAccount {
             alert.showAndWait();
             return false;
         }
-
+        // Check if the username or password fields are blank
+        if (username.isBlank() || password.isBlank()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Account Creation Failed");
+            alert.setHeaderText(null);
+            alert.setContentText("Please enter a username and password.");
+            alert.showAndWait();
+            return false;
+        }
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
             // Check if the username already exists in the database
             PreparedStatement checkStmt = conn.prepareStatement("SELECT COUNT(*) AS count FROM users WHERE LOWER(username) = ?");
@@ -76,28 +84,37 @@ public class createAccount {
             PasswordField passwordField = controller.getPasswordField();
             PasswordField confirmPasswordField = controller.getConfirmPasswordField();
             Button createButton = controller.getCreateButton();
+            Button cancelButton = controller.getCancelButton();
 
             // Add an event handler to the "Create" button that calls the addUser method
             createButton.setOnAction(event -> {
-                String username = usernameField.getText();
-                String password = passwordField.getText();
-                String confirmPassword = confirmPasswordField.getText();
-
-                if (addUser(username, password, confirmPassword)) {
-                    // If the user was successfully added, close the create account window
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Account Creation Successful!");
-                    alert.setHeaderText(null);
-                    alert.setContentText("Please login with your new account credentials.");
-                    alert.showAndWait();
-                    stage.close();
-                    Login login = new Login();
-                    try {
-                        login.start(new Stage());
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
-                }
+                        String username = usernameField.getText();
+                        String password = passwordField.getText();
+                        String confirmPassword = confirmPasswordField.getText();
+                        if (addUser(username, password, confirmPassword)) {
+                            // If the user was successfully added, close the create account window
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                            alert.setTitle("Account Creation Successful!");
+                            alert.setHeaderText(null);
+                            alert.setContentText("Please login with your new account credentials.");
+                            alert.showAndWait();
+                            stage.close();
+                            Login login = new Login();
+                            try {
+                                login.start(new Stage());
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                cancelButton.setOnAction(event -> {
+                        stage.close();
+                        Login login = new Login();
+                        try {
+                            login.start(new Stage());
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
             });
 
         } catch (Exception ex) {
