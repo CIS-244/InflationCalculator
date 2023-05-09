@@ -122,7 +122,7 @@ public class MatchSearch extends Application {
                 // Add each matching product to the results list
                 String name = rs.getString("PRODUCT_NAME");
                 String price = rs.getString("PRICE_RETAIL");
-                String product = name + " (" + price + ")";
+                String product = name + " ($" + price + ")";
                 if (!results.contains(product)) {
                     results.add(product);
                 }
