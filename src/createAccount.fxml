@@ -4,10 +4,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300" prefWidth="400" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <Label layoutX="34" layoutY="54" text="Create New Account">
         <font>
             <Font size="18.0" />
@@ -20,4 +22,9 @@
     <Label layoutX="34" layoutY="190" text="Confirm Password:" />
     <PasswordField fx:id="confirmPasswordField" layoutX="151" layoutY="185" />
     <Button fx:id="createButton" layoutX="166" layoutY="234" mnemonicParsing="false" text="Create" />
+   <ImageView fitHeight="73.0" fitWidth="117.0" layoutX="311.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@Logo_CIS244.png" />
+      </image>
+   </ImageView>
 </AnchorPane>

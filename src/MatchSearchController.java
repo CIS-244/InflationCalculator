@@ -35,6 +35,9 @@ public class MatchSearchController {
     @FXML
     private Button removeButton;
 
+    @FXML
+    private Button emailMe;
+
     public TextField getSearchField() {
         return searchField;
     }
@@ -55,8 +58,7 @@ public class MatchSearchController {
         return addButton;
     }
 
-    public ListView<String> getSelectedList
-            () {
+    public ListView<String> getSelectedList() {
         return selectedList;
     }
     public Label getTotalValueLabel3( ) {
@@ -72,5 +74,8 @@ public class MatchSearchController {
 
     public Button getRemoveButton() {
         return removeButton;
+    }
+    public Button getEmailMe() {
+        return emailMe;
     }
 }

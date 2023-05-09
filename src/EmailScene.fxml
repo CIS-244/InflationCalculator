@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="187.0" prefWidth="267.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+    <Label layoutX="46.0" layoutY="41.0" text="Enter your email address:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="emailField" layoutX="46.0" layoutY="68.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <HBox alignment="CENTER_RIGHT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+     <Button defaultButton="true" layoutX="46.0" layoutY="107.0" onAction="#sendEmail" text="Send" />
+     <Button cancelButton="true" layoutX="142.0" layoutY="107.0" onAction="#closeDialog" text="Cancel" />
+</AnchorPane>

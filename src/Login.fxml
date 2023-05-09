@@ -4,20 +4,27 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" prefHeight="167.0" prefWidth="306.0" spacing="10" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@Logo_CIS244.png" />
+      </image>
+   </ImageView>
     <Label fx:id="label1" text="Login" />
-    <GridPane alignment="CENTER" hgap="10" vgap="10">
-        <Label fx:id="usernameLabel" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <Label fx:id="passwordLabel" text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <GridPane alignment="CENTER" hgap="10" prefHeight="143.0" prefWidth="308.0" vgap="10">
+        <Label fx:id="usernameLabel" text="Username:" />
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" />
+        <Label fx:id="passwordLabel" text="Password:" GridPane.rowIndex="1" />
         <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Button fx:id="createAccountButton" text="Create new account" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <Button fx:id="loginButton" text="Log in" GridPane.rowIndex="3" />
+        <Button fx:id="createAccountButton" text="Create new account" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Button fx:id="loginButton" text="Log in" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <columnConstraints>
          <ColumnConstraints />
          <ColumnConstraints />
@@ -27,6 +34,14 @@
          <RowConstraints />
          <RowConstraints />
          <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+         <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
       </rowConstraints>
     </GridPane>
 </VBox>

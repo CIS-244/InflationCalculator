@@ -1,8 +1,9 @@
 import javafx.application.Application;
-
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -108,6 +109,14 @@ public class MatchSearch extends Application {
                 controller.getSelectedList().getItems().remove(selectedValue);
             }
         });
+        controller.getEmailMe().setOnAction(event -> {
+            try {
+                showEmailScene(controller);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
     }
 
     private ArrayList<String> searchDatabase(String searchTerm) {
@@ -151,6 +160,25 @@ public class MatchSearch extends Application {
         }
         return "";
     }
+    @FXML
+    private void showEmailScene(MatchSearchController test) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EmailScene.fxml"));
+        EmailSceneController controller = new EmailSceneController();
+        loader.setController(controller);
+        Parent root = loader.load();
+
+        controller.setStage(new Stage());
+
+        controller.setStage(new Stage());
+        controller.getStage().setScene(new Scene(root));
+        controller.getStage().setTitle("Email me my list");
+        controller.getStage().initModality(Modality.APPLICATION_MODAL);
+
+        // Pass the MatchSearchController instance to the EmailSceneController
+        controller.setMatchSearchController(test);
+        controller.getStage().show();
+    }
+
 }
 
 

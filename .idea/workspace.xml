@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b64eb6eb-4b0f-4a38-8730-3940660486f1" name="Changes" comment="Integrated changes from Carlos and Mohammad Hadi, ensured compatibility">
+    <list default="true" id="b64eb6eb-4b0f-4a38-8730-3940660486f1" name="Changes" comment="Added email scene">
+      <change afterPath="$PROJECT_DIR$/src/EmailScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EmailSceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logo_CIS244.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatchSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearch.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatchSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatchSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatchSearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/createAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/createAccount.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +53,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MZ95D86F8ul43h0mJqw46GLSfq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -212,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683386439601</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Integrated changes from Carlos and Mohammad Hadi, ensured compatibility">
+      <created>1683591051078</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683591051078</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +250,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial test" />
     <MESSAGE value="Added API Class to interface with the CSV we want to pull the CPI data from." />
     <MESSAGE value="test" />
@@ -243,6 +267,7 @@
     <MESSAGE value="Simplified hashing function" />
     <MESSAGE value="Moved CSS into root directory of project" />
     <MESSAGE value="Integrated changes from Carlos and Mohammad Hadi, ensured compatibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated changes from Carlos and Mohammad Hadi, ensured compatibility" />
+    <MESSAGE value="Added email scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added email scene" />
   </component>
 </project>

@@ -29,8 +29,8 @@ public class Login extends Application {
         root.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
 
         // Set the title and size of the login screen and show it
-        primaryStage.setTitle("Login");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.setTitle("Inflation Calculator");
+        primaryStage.setScene(new Scene(root, 450, 450));
         primaryStage.show();
 
         // Handle the login button click event
