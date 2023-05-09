@@ -24,7 +24,7 @@
             <Label fx:id="totalValueLabel1" text="0.00" />
             <Label text="Total After Inflation:$" />
             <Label fx:id="totalValueLabel2" text="0.00" />
-             <Label text="You save:" />
+             <Label text="Buy now you save:" />
             <Label fx:id="totalValueLabel3" text="0.00" />
             <Button text="Remove" fx:id="removeButton" />
         </HBox>
