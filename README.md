@@ -34,3 +34,9 @@ This class provides a utility method for hashing passwords using the SHA-256 alg
 hashPassword(String password, String fixedSalt): This method takes two parameters, password and fixedSalt, and returns a hashed representation of the password as a Base64-encoded string. The password parameter is the plain text password to be hashed, and the fixedSalt parameter is a string that is used as a fixed salt for the hashing process. The method first converts the fixed salt to a byte array and then uses it to update a MessageDigest instance initialized with the SHA-256 algorithm. The password is then converted to a byte array and used to update the MessageDigest. Finally, the MessageDigest is used to generate a salted hash of the password, which is then encoded as a Base64 string and returned.
 
 If an error occurs while hashing the password, the method returns an empty string and prints an error message to the console.
+
+EmailSceneController:
+The provided code is a Java class named "EmailSceneController" that serves as the controller for an email scene in a JavaFX application. It allows the user to send a grocery report via email using the Apache Commons Email library.
+The code utilizes the Apache Commons Email library to send the email. It sets up an HtmlEmail object, configures the SMTP server details, adds the recipient, sender, subject, and email body, and finally sends the email.
+
+If the email is sent successfully, an information dialog is displayed. Otherwise, an error dialog is shown with the corresponding error message.
