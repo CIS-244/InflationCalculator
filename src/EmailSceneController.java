@@ -29,7 +29,7 @@ public class EmailSceneController {
     private void sendEmail() {
         setStage(stage);
         String recipient = emailField.getText();
-        String subject = "Your Shopping List";
+        String subject = "Grocery Report";
         String body = generateEmailBody();
 
         try {
@@ -48,7 +48,7 @@ public class EmailSceneController {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Email sent");
             alert.setHeaderText(null);
-            alert.setContentText("Your shopping list has been sent to " + recipient + ".");
+            alert.setContentText("Your report has been sent to " + recipient + ".");
             alert.showAndWait();
             closeDialog();
         } catch (Exception ex) {

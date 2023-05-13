@@ -10,9 +10,6 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-//import InflationAPI.ArrayList;
-
-
 
 public class MatchSearch extends Application {
 
